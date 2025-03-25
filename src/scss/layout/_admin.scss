@@ -1,0 +1,156 @@
+.admin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $light_black;
+  z-index: 15;
+}
+
+.admin__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 800px;
+  background-color: $white;
+
+  @include phone {
+    width: 90%;
+  }
+}
+
+.admin__close-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.admin__line {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @include phone {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.admin__options,
+.admin__preview {
+  height: 100%;
+}
+
+.admin__options {
+  max-width: 25%;
+  flex: 1 1 25%;
+  background-color: $slate_gray;
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.admin__preview {
+  position: relative;
+  max-width: 75%;
+  flex: 1 1 75%;
+  overflow: scroll;
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.admin__navigation-item {
+  width: 100%;
+
+  @include hover {
+    background-color: $purple;
+    cursor: pointer;
+    transition: $normal;
+  }
+}
+
+.admin__navigation-link {
+  display: block;
+  color: $white;
+  font-size: 20px;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.admin__account {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  padding: 20px 0;
+  text-align: center;
+
+  @include phone {
+    position: static;
+    transform: translate(0, 0);
+  }
+}
+
+.admin__profile-photo {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+
+.admin__username {
+  margin-bottom: 7px;
+}
+
+.admin__products-title {
+  font-size: 30px;
+  font-weight: $medium;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.admin__products-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.admin__products-item {
+  margin: 0 10px 40px 10px;
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  text-align: center;
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 10px 20px 10px;
+  }
+}
+
+.admin__product-image {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto 10px auto;
+}
+
+.admin__product-title {
+  display: block;
+  font-size: 18px;
+  font-weight: $semi;
+  margin-bottom: 5px;
+  line-height: 22px;
+}
+
+.admin__product-price {
+  display: block;
+  font-size: 15px;
+}

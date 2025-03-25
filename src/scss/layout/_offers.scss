@@ -1,0 +1,133 @@
+.offers {
+  margin-bottom: 90px;
+
+  @include phone {
+    margin-bottom: 20px;
+  }
+}
+
+.offers__title {
+  font-size: 18px;
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  padding: 13px 0;
+  margin-bottom: 20px;
+
+  @include phone {
+    font-size: 14px;
+  }
+}
+
+.offers__list {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.offers__list-item {
+  margin: 0 10px 70px 10px;
+  max-width: calc(20% - 20px);
+  flex: 1 1 calc(20% - 20px);
+
+  @include phone {
+    margin: 0px 10px 35px 10px;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.offers__product-image {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto 10px auto;
+
+  @include phone {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+.offers__product-title,
+.offers__product-price {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: $medium;
+}
+
+.offers__product-title {
+  color: $black;
+}
+
+.offers__product-price {
+  background-color: $red;
+  color: $white;
+  padding: 5px 5px;
+  max-width: 85px;
+  margin: 0 auto;
+  transform: rotate(-6deg);
+
+  @include phone {
+    font-size: 13px;
+  }
+}
+
+.offers__item-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $light_black;
+  z-index: 20;
+}
+
+.offers__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: $white;
+  padding: 15px 10px 30px 10px;
+  border-radius: 20px;
+
+  @include phone {
+    padding: 35px 10px 30px 10px;
+  }
+}
+
+.offers__item-image {
+  max-width: 250px;
+  max-height: 250px;
+  margin-bottom: 20px;
+}
+
+.offers__item-title,
+.offers__item-price {
+  display: block;
+}
+
+.offers__item-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: $semi;
+}
+
+.offers__item-price {
+  font-weight: $medium;
+  margin-bottom: 13px;
+}
+
+.offers__item-text {
+  max-width: 355px;
+  line-height: 19px;
+  font-size: 15px;
+}
+
+.offers__close-img {
+  max-width: 100%;
+  max-height: 100%;
+}
